@@ -1,9 +1,12 @@
 function printElementsDivisibleBy3(array) {
-    array.forEach((element, index) => {
-        if (index % 3 === 0) {
-            console.log(`Элемент с индексом ${index}: ${element}`);
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (i % 3 === 0) {
+            console.log(`Элемент с индексом ${i}: ${array[i]}`);
+            sum += array[i];
         }
-    });
+    }
+    console.log(`Сумма элементов с идексом, кратные 3: ${sum}`)
 }
 
 function printEvenElements(array) {
